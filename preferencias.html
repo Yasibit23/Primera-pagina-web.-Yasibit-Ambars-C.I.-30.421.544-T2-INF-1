@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de variedades</title>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="favicon.ico.png" />
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tienda de variedades</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preferencias.html">Preferencias</a></li>
+            <li><a href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: antiquewhite;">
+                <col>
+                <col>
+                <col>
+                <col>
+                <th></th>
+                <th>Preferidos:</th>
+                <th>Menos vendidos:</th>
+
+                <tr>
+                    <td>Ropa</td>
+                    <td>Camisetas</td>
+                    <td>Gorras</td>
+                </tr>
+                <tr>
+                    <td>Papeleria</td>
+                    <td>Lapices de colores </td>
+                    <td>Borradores de colores</td>
+                </tr>
+                <tr>
+                    <td>Juguetes</td>
+                    <td>Legos</td>
+                    <td>Pelotas</td>
+                </tr>
+                <tr>
+                    <td>Hogar</td>
+                    <td>Electrodomesticos</td>
+                    <td>Cortinas</td>
+                </tr>
+                <tr>
+                    <td>Aseo</td>
+                    <td>Champu</td>
+                    <td>Detergente</td>
+                </tr>
+            </colgroup>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+        <p>Yasibit Ambard, C.I. 30.421.544</p>
+        <P>yasibitambard@gmail.com</P>
+    </footer>
+</body>
+</html>
